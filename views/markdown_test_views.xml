@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Form View -->
+    <record id="view_dudoxx_markdown_test_form" model="ir.ui.view">
+        <field name="name">dudoxx.markdown.test.form</field>
+        <field name="model">dudoxx.markdown.test</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Title"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <field name="quill_text" widget="html"/>
+                        <field name="markdown_text" placeholder="Enter markdown text here..."/>
+                        <field name="rendered_markdown" widget="ddx_markdown" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_dudoxx_markdown_test_tree" model="ir.ui.view">
+        <field name="name">dudoxx.markdown.test.tree</field>
+        <field name="model">dudoxx.markdown.test</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_dudoxx_markdown_test" model="ir.actions.act_window">
+        <field name="name">Markdown Tests</field>
+        <field name="res_model">dudoxx.markdown.test</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu -->
+    <menuitem id="menu_dudoxx_markdown_test"
+              name="Markdown Tests"
+              action="action_dudoxx_markdown_test"
+              sequence="10"/>
+</odoo>

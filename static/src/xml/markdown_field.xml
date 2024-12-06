@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="dudoxx_extensions.MarkdownField" owl="1">
+        <div class="o_field_markdown" t-att-class="props.classNames">
+            <t t-set="content" t-value="formattedValue"/>
+            <div class="o_markdown_content" t-out="content"/>
+        </div>
+    </t>
+</templates>

@@ -1,0 +1,126 @@
+.o_markdown_field {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+}
+
+.o_markdown_field h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.o_markdown_field h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.o_markdown_field h3 {
+    font-size: 1.17em;
+    margin-bottom: 0.5em;
+}
+
+.o_markdown_field pre {
+    background-color: #282c34;
+    color: #abb2bf;
+    padding: 1em;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.o_markdown_field code {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    padding: 0.2em 0.4em;
+    background-color: rgba(27,31,35,0.05);
+    border-radius: 3px;
+}
+
+.o_markdown_field blockquote {
+    border-left: 4px solid #dfe2e5;
+    color: #6a737d;
+    padding: 0 1em;
+    margin: 0;
+}
+
+.o_markdown_field table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.o_markdown_field th,
+.o_markdown_field td {
+    border: 1px solid #dfe2e5;
+    padding: 6px 13px;
+}
+
+.o_markdown_field tr:nth-child(2n) {
+    background-color: #f6f8fa;
+}
+
+.o_field_markdown {
+    padding: 1rem;
+}
+
+.o_field_markdown .o_markdown_content {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.o_field_markdown h1,
+.o_field_markdown h2,
+.o_field_markdown h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+.o_field_markdown h1 { font-size: 2em; }
+.o_field_markdown h2 { font-size: 1.5em; }
+.o_field_markdown h3 { font-size: 1.25em; }
+
+.o_field_markdown p {
+    margin: 1em 0;
+}
+
+.o_field_markdown ul,
+.o_field_markdown ol {
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
+.o_field_markdown li {
+    margin: 0.5em 0;
+}
+
+.o_field_markdown code {
+    background: #f5f5f5;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+.o_field_markdown pre {
+    background: #f5f5f5;
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.o_field_markdown pre code {
+    background: none;
+    padding: 0;
+}
+
+.o_field_markdown blockquote {
+    border-left: 4px solid #ddd;
+    margin: 1em 0;
+    padding-left: 1em;
+    color: #666;
+}
+
+.o_field_markdown input[type="checkbox"] {
+    margin-right: 0.5em;
+}

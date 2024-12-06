@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Basic Markdown Example -->
+        <record id="markdown_test_basic" model="dudoxx.markdown.test">
+            <field name="name">Basic Markdown Example</field>
+            <field name="markdown_text"># Module Documentation
+
+## Installation
+
+1. Clone the repository
+2. Install dependencies
+3. Run the server
+
+## Configuration
+
+```yaml
+options:
+  debug: true
+  port: 8069
+  db_name: test_db
+```
+
+## Features
+
+- [x] Markdown Support
+- [x] Code Highlighting
+- [ ] Real-time Preview
+- [ ] Export Options
+
+> **Note:** This is a sample documentation showing various markdown features in action.
+
+For more information, contact support@example.com</field>
+            <field name="quill_text">&lt;h1&gt;Rich Text with Quill&lt;/h1&gt;
+&lt;p&gt;This is a &lt;strong&gt;rich text&lt;/strong&gt; example using &lt;em&gt;Quill editor&lt;/em&gt;.&lt;/p&gt;</field>
+        </record>
+
+        <!-- Rich Text and Markdown Comparison -->
+        <record id="markdown_test_comparison" model="dudoxx.markdown.test">
+            <field name="name">Rich Text and Markdown Comparison</field>
+            <field name="markdown_text"># Rich Text and Markdown
+
+This record demonstrates both:
+
+* Rich text using Quill
+* Markdown rendering
+
+### Comparison
+
+1. Rich Text: WYSIWYG editing
+2. Markdown: Text-based formatting
+
+> See how different formatting looks in each editor</field>
+            <field name="quill_text">&lt;h1&gt;Comparison Example&lt;/h1&gt;
+&lt;p&gt;See how the same content looks in Quill vs Markdown:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Rich Text (Quill): Visual editing&lt;/li&gt;
+  &lt;li&gt;Markdown: Plain text with formatting&lt;/li&gt;
+&lt;/ul&gt;</field>
+        </record>
+    </data>
+</odoo>
